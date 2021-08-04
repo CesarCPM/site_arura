@@ -1,0 +1,266 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: goldenrod;
+    text-decoration: underline;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+
+.produtos li:hover {
+    border-color: goldenrod;
+}
+
+.produtos li:active {
+    border-color: gold;
+}
+
+.produtos li:hover h2 {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.produtos h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.descrição {
+    font-size: 22px;
+}
+
+.preço {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+footer {
+    text-align: center;
+    background: url(bg.jpg);
+    padding: 40px;
+}
+
+.rodape-texto {
+    color: whitesmoke;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.main-contato {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    width: 50%;
+    padding: 10px 10px;
+}
+
+.checkbox {
+    margin: 10px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 10px;
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    transition: 1s all;
+}
+
+.enviar:hover {
+    background-color: darkorange;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+td, th {
+    border: black 1px solid;
+    padding: 8px 10px;
+    font-weight: bold;
+}
+
+/* CSS da página inicial */
+
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 1em 0 1em;
+    clear: left;
+}
+
+.principal {
+    padding: 2em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.beneficios {
+    padding: 3em 0;
+    background: gray;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.imagem-beneficios {
+    width: 60%;
+    box-shadow: 5px 5px 10px black;
+}
+
+.itens-img {
+    width: 254px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:first-child {
+    color: black;
+    font-weight: bold;
+}
+
+.itens::before {
+    content: "★";
+}
+
+.mapa {
+    padding: 2em;
+    background-image: linear-gradient(to bottom, white, gray);
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    text-align: center;
+    margin: 0 0 2em 0;
+}
+
+.video {
+    text-align: center;
+    margin: 2em auto;
+    width: 640px;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+    .itens-img {
+        width: 180px;
+    }
+}
